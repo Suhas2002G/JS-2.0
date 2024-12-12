@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Array</h3>
+
+<script>
+    var arr=['suhas','harshal','pratap','kaustubh']
+
+    //print all elements of arr
+    document.write(arr) //suhas,harshal,pratap,kaustubh
+
+    //print 2nd inddex element
+    document.write(arr[2]) //pratap
+
+    //negative indexing not work in js`
+    document.write(arr[-1])  //undefined
+
+    //add element in existing array
+    arr.push(10)  //at last position
+    document.write(arr)  ////suhas,harshal,pratap,kaustubh,10
+
+    //add ram at 1st index 
+    arr[1]='ram'
+    document.write(arr)  //suhas,ram,pratap,kaustubh,10
+
+    //find length
+    document.write(arr.length)   //5
+
+    //remove last index element 
+    arr.pop()  
+    document.write(arr)  ////suhas,ram,pratap,kaustubh
+</script>
+</body>
+</html>
