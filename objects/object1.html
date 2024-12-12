@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>An object is a standalone entity with properties and methods</h1>
+    <h2>Object : Object is an realtime entity, it is a instance of class</h2>
+</body>
+<script>
+const stud={
+    name:'suhas',
+    marks:90,
+
+}
+
+// document.write(stud.name + " " + stud.marks)
+
+//add property in existing objects
+stud.mob=7755994279
+
+// document.write(stud.name + " " + stud.marks + " " + stud.mob)
+
+//delete property from existing object
+delete stud.marks 
+
+document.write(stud.name + " " + stud.marks + " " +stud.mob)  //suhas undefined 7755994279
+</script>
+</html>
