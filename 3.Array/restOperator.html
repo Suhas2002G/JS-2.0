@@ -39,6 +39,15 @@ res=add(4,5,6,7,6,100)  //128
 console.log(res)
 
 
+
+
+function mul(...arr){
+        return arr.reduce((s,i)=>s*i,1)
+    }
+res=mul(4,5,6,7,6,100)  //504000
+console.log(res)
+
+
 </script>
 </body>
 </html>
