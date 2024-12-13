@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let arr = ['suhas', 'pratap', 'harshal', 'om', 'ram'];
+
+    //rest Opearator : rest of the elements gets stored in another array
+    let[a,b,...newarr]=arr;
+    console.log(a)  //suhas
+    console.log(b)  //pratap
+    console.log(newarr)  //['harshal', 'om', 'ram']
+
+
+
+    let a1=[1,2,3,4,5]
+    let a2=[10,20,30,40,50]
+
+    //combine above array usings rest opearator
+    // let a3=[...a1,...a2]
+    // console.log(a3)  //[1, 2, 3, 4, 5, 10, 20, 30, 40, 50]
+
+
+    // function add(a,b,c){
+    //     return a+b+c
+    // }
+    // a=add(...a1)
+    // console.log(a)
+
+//add elements variable length argument passed 
+    function add(...arr){
+        return arr.reduce((s,i)=>s+i,0)
+    }
+res=add(4,5,6,7,6,100)  //128
+console.log(res)
+
+
+</script>
+</body>
+</html>
