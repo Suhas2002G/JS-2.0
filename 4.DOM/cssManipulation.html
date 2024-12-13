@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading" style="color: red;">Hello from IT Vedant</h1>
+    <button type="submit" onclick="display()">Change Style</button>
+    <script>
+        
+
+       function display(){
+        x=document.getElementById('heading')
+        // console.log(x) 
+
+        x.innerHTML='Welcome to our course PFSD'
+        // r=x.style.color; 
+        // console.log(r)
+        x.style.color='green'
+        }
+        
+        
+    </script>
+</body>
+</html>

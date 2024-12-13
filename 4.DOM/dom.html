@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Hello from IT Vedant</h1>
+    <input type="text" placeholder="Enter name" id="input">
+    <button type="submit" onclick="display()">Submit</button>
+    <script>
+        
+
+       function display(){
+        x=document.getElementById('heading')
+        console.log(x) 
+
+        x.innerHTML='Welcome to our course PFSD'
+
+        y=document.getElementById('input').value 
+        console.log(y)
+        }
+        
+        
+    </script>
+</body>
+</html>
